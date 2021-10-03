@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://www.vacationrentalcleans.com/wp-content/uploads/2014/12/wood-background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .box{
+            width:600px;
+            margin:170px auto;
+            border:2px solid white;
+            text-align: center;
+            padding-top: 35px;
+            font-size: 62px;
+        }
+        
+
+        .box1{
+                 padding-top:30px;
+        }
+        .box2{
+            
+            padding-top:20px;
+            padding-bottom: 70px;
+            display:flex;
+            justify-content: space-evenly;
+
+        }
+        #apac{
+            position: absolute;;
+        
+        }
+        #apus{
+            position: relative;
+            
+        }
+
+    </style>
+</head>
+<body>
+   <div class="box">
+       Counter</br>
+       <div id="apas" class="box1" style="font-size:135px;">0</div>
+       <div class="box2">
+       <button onclick="decrementValue()" id="" style="background-color:teal;font-size: 25px;color:cornsilk;">Lower Count</button>
+       <button onclick="incrementValue()" id="apus" style="background-color:teal;font-size: 25px;color:cornsilk;">Add Count</button>
+    </div>
+   </div>
+     <script>
+       var apsc=document.getElementById("apas")
+       var count=0
+       
+       function incrementValue()
+       {
+            count++
+            apsc.innerHTML=count
+            if(count>0)
+           {
+            apsc.style.color='green'
+           }
+            else if(count===0)
+          {
+            apsc.style.color='#333'
+          }
+           else
+          {
+            apsc.style.color='red'
+          }
+       }
+        function decrementValue()
+       {
+           count--
+           apsc.innerHTML=count
+           if(count>0)
+       {
+           apsc.style.color='green'
+       }
+       else if(count===0)
+       {
+        apsc.style.color='#333'
+       }
+       else
+       {
+        apsc.style.color='red'
+       }
+       }
+       
+       
+
+     </script>
+</body>
+</html>

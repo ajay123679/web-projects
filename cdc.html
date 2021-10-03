@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+            
+        padding:0;
+        margin:0;  
+        box-sizing: border-box;
+    }
+    
+    body{
+        
+        
+        background-image: url("https://wallpaperheart.com/wp-content/uploads/2018/08/cars-hd-wallpapers-5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+    } 
+    
+    p{
+        text-align:center;
+        margin-top:40px;
+        font-size: 40px;
+        color: orangered;
+    } 
+    article{
+        text-align:center;
+        margin-top:28px;
+        font-size: 60px;
+        color:white;
+    }  
+    .box{
+        width: 700px;
+        margin:100px auto 0px auto ;
+        border: 1px solid white;
+        
+
+    }
+    .box1 img{
+        border-radius:100%;
+        width:200px;
+        position: relative;
+        top:-70px;
+        left:250px;
+        height:140px;
+    }
+    .box1 p{
+        position: relative;
+        top:-45px;
+        font-size:32px;
+        color:white;
+    
+    }
+    .box1 article{
+        position: relative;
+        bottom:5px;
+        font-size:50px;
+        color:rgb(83, 74, 78);
+        left: 100px;
+        
+    }
+    #asdf{
+           position: relative;
+           top:-230px;
+           left:340px;
+    }
+    #asdg{
+        position: relative;
+          top:-230px;
+          left:1075px;
+    }
+    
+       
+    </style>
+</head>
+
+<body>
+     
+      <p>CLIENT</p>
+      <article>TESTIMONIAL</article>
+      <div class="box" id="sdfg">
+          <div class="box1" id="apas">
+           <img src="https://laffaz.com/wp-content/uploads/2020/03/ms-dhoni-invests-bengaluru-business-ledger-app-khatabook.jpg"/>
+           <p>"You don’t play for the crowd. You play for the country."</p>
+           
+           <article><i>Mahendra Singh Dhoni</i></article>
+          </div>
+          <div class="box1" id="apap">
+
+            <img src="https://imagevars.gulfnews.com/2019/08/14/Rahul-Dravid_16c8f3cd54e_large.jpg">
+            <p>I have failed at times, but I never stop trying.</p>
+            <article>Rahul Dravid</article>
+              
+          </div>
+
+          <div class="box1" id="apat">
+              <img src="https://cricketaddictor.com/wp-content/uploads/2019/08/4d46f075eb156b0c507067a8e8f39147-1.jpg">
+              <p>My first bat was shaped of a coconut branch. And from that day, all I wanted to do was be a cricketer.</p>
+              <article>Brian Lara</article>
+          </div>
+          <div class="box1" id="apag">
+              <img src="https://cdn.images.express.co.uk/img/dynamic/68/590x/Shane-Warne-879145.jpg">
+              <p>To me, cricket is a simple game. Keep it simple and just go out and play.</p>
+              <article>Shane Warne</article>
+              
+          </div>
+         
+      </div>
+      <div class="ghij" id="apus">
+        <svg width="3em" height="3em" id="asdf" viewBox="0 0 16 16" onclick="plusDivs(-1)" class="bi bi-caret-left-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10a.5.5 0 0 1-.832.374l-4.5-4a.5.5 0 0 1 0-.748l4.5-4A.5.5 0 0 1 10.5 4v8z"/>
+          </svg>
+          <svg width="3em" height="3em" id="asdg" viewBox="0 0 16 16" onclick="plusDivs(1)" class="bi bi-caret-right-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+          </svg>
+          
+      </div>
+      <script>
+          
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("box1");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      
+      
+</body>
+</html>

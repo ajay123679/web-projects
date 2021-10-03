@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+           padding:0;
+           margin:0;  
+           box-sizing: border-box;
+    }
+    .box1{
+        margin-top:40px; 
+        margin-left:500px;
+        width:500px;
+        height:75px;
+        border:8px solid black;
+        font-size: 20px;
+        background-color:#044;
+        color: beige;
+
+    }
+    .box{
+        width:500px;
+        position: relative;
+        top:3px;
+        left:500px;
+        display:grid;
+        grid-template-columns: repeat(4,125px);
+        grid-template-rows: repeat(5,100px);
+        border:1px solid black;
+        font-size: 25px;
+        
+   
+    }
+    .num{
+        background-color: #f90;
+        padding: 37px 50px;
+        
+    }
+    .num1{
+        background-color: #ff9;
+        padding: 37px 50px;
+    }
+    .num2{
+        background-color: red;
+        padding: 37px 50px;
+    }
+
+    </style>
+</head>
+<body>
+    <form>
+    <input name="calculator" type="text" class="box1" id="result">
+    </form>
+    <div class="box">
+    <span class="num" onclick="solve()" style="border: 1px solid black;">=</span>
+    <span class="num" onclick="dis('/')" style="border: 1px solid black;">/</span>
+    <span class="num" onclick="dis('*')" style="border: 1px solid black;">*</span>
+    <span class="num" onclick="dis(7)" style="border: 1px solid black;">7</span>
+    <span class="num1" onclick="dis(8)" style="border: 1px solid black;">8</span>
+    <span class="num1" onclick="dis(9)" style="border: 1px solid black;">9</span>
+    <span class="num1" onclick="dis('-')" style="border: 1px solid black;">-</span>
+    <span class="num1" onclick="dis(4)" style="border: 1px solid black;">4</span>
+    <span class="num1" onclick="dis(5)" style="border: 1px solid black;">5</span>
+    <span class="num1" onclick="dis(6)" style="border: 1px solid black;">6</span>
+    <span class="num1" onclick="dis('+')" style="border: 1px solid black;">+</span>
+    <span class="num1" onclick="dis(3)" style="border: 1px solid black;">3</span>
+    <span class="num1" onclick="dis(2)" style="border: 1px solid black;">2</span>
+    <span class="num1" onclick="dis(0)" style="border: 1px solid black;">0</span>
+    <span class="num1" onclick="dis(1)" style="border: 1px solid black;">1</span>
+    <span class="num1" onclick="dis('.')" style="border: 1px solid black;">.</span>
+    <span class="num2" onclick="clr()" style="border: 1px solid black;">C</span>
+    </div>
+    <script>
+     function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x=document.getElementById("result").value
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+    </script>
+   
+    </body>
+
+</html>

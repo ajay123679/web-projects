@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
+    section{
+        width:100%;
+        height: 100vh;
+        background: #159;
+    }
+    .box{
+        width:600px;
+        height: 350px;
+        background: cornsilk;
+        position: relative;
+        top:29%;
+        left:31%;
+        font-size: 30px;
+        text-align: center;
+        padding-top:30px;
+        
+    }
+    .box1{
+        width:560px;
+        height: 30px;
+        margin-top: 30px;
+    }
+    button{
+        margin-top: 25px;
+        width:105px;
+        height: 43px;
+        padding: 10px;
+    }
+    
+    article{
+        margin-top: 20px;
+    }
+    .box2{
+            margin:30px;
+
+    }
+
+</style>
+<body>
+    <section>
+        <div class="box">
+            A message You would Like to Pass
+            <form id="apas">
+                <input class="box1" id="apac" type="text" name="text"></input>
+             
+            </form>
+            <button onclick="mytext()" class="ajas" style="background-color:aqua;color:white;border-radius: 12px;" >Submit</button>
+                
+        </br>
+            
+            <article> Message Delivered</article>
+
+             <p id="apus" class="box2">
+               Hello World
+             </p>
+             <script>
+                
+               function mytext()
+               {
+                    
+                    var apsc=document.getElementById("apac").value
+                    var vpsc=document.getElementById("apus")
+                    if(apsc=="")
+                    {
+                        vpsc.innerHTML="Please Enter the Text"   
+                    }
+                    else
+                    {
+                
+                       vpsc.innerHTML=apsc
+                       
+                    }
+
+
+               }
+                 
+                 
+             </script>
+           
+
+            
+        </div>
+    </section>
+</body>
+</html>
